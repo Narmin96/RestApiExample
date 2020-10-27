@@ -1,4 +1,6 @@
+
 exports.getPosts=(req,res,next)=>{
+    
     res.status(200).json({
         posts:[{
             fullname:'Narmin Nasirova',
@@ -6,7 +8,9 @@ exports.getPosts=(req,res,next)=>{
             salary:700.00
 
         }]
+        
     })
+    
 }
 exports.createPost=(req,res,next)=>{
     const full_name=req.body.fullname;
